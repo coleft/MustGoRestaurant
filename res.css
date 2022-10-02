@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Song+Myung&family=Sunflower:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
 
 
 *{
@@ -26,7 +27,7 @@ body{
 
 #header_nav_logo{
     display : inline-block;
-    margin-left : 10px;
+    margin-left : 30px;
 }
 
 #header_nav_logo img{
@@ -36,13 +37,20 @@ body{
 }
 
 #header_nav span{   
-    color :rgb(110, 35, 157);
+    color : #333;
     font-size : 25px;
+    font-family : Gugi;
+    font-weight : bold;
 }
 
 #header_nav_link{
     float:right;
     margin-top : 20px;
+    margin-right : 30px;
+}
+
+#header_nav_link a{
+    text-decoration : none;
 }
 
 #header_back{
@@ -61,38 +69,46 @@ body{
 #search #text{
     width : 500px;
     height : 60px;    
-    border-radius : 30px;
-    border : 10px solid rgb(191, 56, 56);
+    border-radius : 50px;
+    border : 6px solid #333;
     font-size : 50px;
-    padding : 10px;
     text-align : center;
+    margin-right : 10px;
+    font-family : serif;
+    font-size : 35px;
 }
 
 #search #btn{
-    margin-top : 10px;
-    width : 200px;
+    width : 150px;
+    padding : 1px;
     height : 60px;
     border-radius : 30px;
     font-size : 40px;
-    background-color : #4713f5;
-    border : 8px solid #222;
-    color : #f5f525;
+    background-color : rgb(205, 46, 46);
+    border : 6px solid #333;
+    color : #eee;
 }
 
 #search #pick{
+    width : 620px;
     display : inline-block;
-    margin : 10px auto;
-    background-color : indigo;
+    margin : 25px auto;
+    background-color : rgb(102, 69, 125);
     padding : 5px 20px;
-    border-radius : 10px;
+    border-radius : 25px;
+    border : 6px solid #333;    
 }
 
 #search #pick .pick_text{
     text-decoration : none;
     color : inherit;
     font-size : 20px;
-    color : wheat;
+    color : rgb(220, 200, 255);
+    padding : 2px;
+}
 
+#search #pick .pick_text:hover{
+    cursor : pointer;    
 }
 
 #search #btn:hover{
@@ -127,14 +143,4 @@ body{
     font-family : Sunflower, Georgia, 'Times New Roman', Times, serif;
     color : black;
     font-size : 25px;  
-}
-
-#foot{
-    border-top : 5px solid #333;
-    height: 100px;
-    background-color:#999;
-}
-
-#foot pre{
-    color : #ccc;
 }

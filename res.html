@@ -15,39 +15,42 @@
                 <img src="./back/logo.png"/>
             </div>
             <div id = "header_nav_link">
-                <span>홈 화면 | </span>
-                <span>걸어서 맛집속으로? | </span>
-                <span>점심 월드컵 | </span>                
-                <span>식당 목록 | </span>
-                <span>문의 사항 | </span>
+                <span> | </span>
+                <a href="res.html"><span>홈 화면</span></a>
+                <span> | </span>
+                <span>서울대입구 맛집속으로</span>
+                <span> | </span>
+                <span>점심 월드컵</span>
+                <span> | </span>           
+                <span>식당 목록</span>
+                <span> | </span>
+                <span>문의 사항</span>
+                <span> | </span>
                 <span>만든 방법 </span>
+                <span> | </span>
             </div>
         </div>        
         <div id = "search">            
-            <input id = "text" type="text"/><br/>
+            <input id = "text" type="text"/>
             <input id = "btn" type="button" value="검색"><br/>
             <div id = "pick">
-                <a class = "pick_text" href = "#">낮은가격순</a>
+                <span id = "low_price" class = "pick_text" onclick = "low_price_btn()">낮은가격순</span>
                 <span> | </span>
-                <a class = "pick_text" href = "#">평점순</a>   
+                <span id = "high_score" class = "pick_text" onclick = "high_score_btn()">평점순</span>  
                 <span> | </span>
-                <a class = "pick_text" href = "#">DB구축자픽</a>   
+                <span id = "recommend" class = "pick_text" onclick = "DB_establisher_btn()">랜덤픽럭키세븐</span>   
                 <span> | </span>
-                <a class = "pick_text" href = "#">거리순</a>
+                <span id = "distance" class = "pick_text" onclick = "short_distance_btn()">거리순</span>
                 <span> | </span>
-                <a class = "pick_text" href = "#">한식</a>                
+                <span id = "korean" class = "pick_text" onclick = "korean_food_btn()">한식</span>
+                <span> | </span>
+                <span id = "rice" class = "pick_text" onclick = "rice_food_btn()">백반</span>
+                <span> | </span>
+                <span id = "western" class = "pick_text" onclick = "western_food_btn()">양식</span>             
             </div>            
         </div>
     </div>    
     <div id = "main">        
     </div>    
-    <footer id = "foot">
-        <pre>
-만든 사람 : 강은성
-        </pre>
-    </footer>
 </body>
 </html>
-
-
-<!-- 음식점이름	분류	세분류	평점(5점)	 대표 가격 	시간(분)	익명 후기	거리(미터)	메뉴1	메뉴2	메뉴3	특이사항 -->
