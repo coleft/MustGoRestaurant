@@ -1,5 +1,7 @@
-btn.onclick = function(){
 
+
+btn.onclick = function(){
+    
     main.innerHTML = "";
     
     for(let i = 0; i<data.length; i++){
