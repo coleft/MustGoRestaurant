@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Song+Myung&family=Sunflower:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500&display=swap');
+
 
 *{
     margin:0;
@@ -16,18 +18,31 @@ body{
     height : 450px;
 }
 
-#header_nav{
-    text-align : right;
-    padding-right : 50px;
-    padding-top : 20px;
-    background-color:rgb(249, 255, 196);
-    height : 50px;    
-    
+#header_nav{   
+    background-color:#bbdfff;
+    height : 70px;   
+    border-bottom : 5px solid #333;     
+}
+
+#header_nav_logo{
+    display : inline-block;
+    margin-left : 10px;
+}
+
+#header_nav_logo img{
+    display : inline-block;
+    height : 70px;
+    width : 200px;    
 }
 
 #header_nav span{   
-    color :rgb(156, 43, 226);
+    color :rgb(110, 35, 157);
     font-size : 25px;
+}
+
+#header_nav_link{
+    float:right;
+    margin-top : 20px;
 }
 
 #header_back{
@@ -69,6 +84,7 @@ body{
     margin : 10px auto;
     background-color : indigo;
     padding : 5px 20px;
+    border-radius : 10px;
 }
 
 #search #pick .pick_text{
@@ -89,11 +105,11 @@ body{
 
 .card{
     display : inline-block;
-    width : 25%;
-    height : 450px;
+    width : 350px;
+    height : 470px;
     margin : 30px;
     padding : 20px;
-    border : 3px solid wheat;
+    border : 5px solid #222;
     border-radius : 20px;
     background-color : wheat;
     color:indigo;
@@ -108,7 +124,17 @@ body{
 }
 
 .info{
-    font-family : Georgia, 'Times New Roman', Times, serif;
+    font-family : Sunflower, Georgia, 'Times New Roman', Times, serif;
     color : black;
-    font-size : 25px;    
+    font-size : 25px;  
+}
+
+#foot{
+    border-top : 5px solid #333;
+    height: 100px;
+    background-color:#999;
+}
+
+#foot pre{
+    color : #ccc;
 }
