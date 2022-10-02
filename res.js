@@ -17,7 +17,7 @@ function low_price_btn(){
         return a[sortingField] - b[sortingField];        
     });
 
-    for(let i = 2; i<data.length+2; i++){
+    for(let i = 2; i<data.length; i++){
         main.innerHTML +=    
             `
                 <a class = "card_link" href="${data[i]["링크"]}" target = "_blank">
@@ -50,7 +50,7 @@ function high_score_btn(){
         return b[sortingField] - a[sortingField];        
     });
 
-    for(let i = 2; i<data.length+2; i++){
+    for(let i = 2; i<data.length; i++){
         main.innerHTML +=    
             `
                 <a class = "card_link" href="${data[i]["링크"]}" target = "_blank">
@@ -116,7 +116,7 @@ function short_distance_btn(){
         return a[sortingField] - b[sortingField];        
     });
 
-    for(let i = 2; i<data.length+2; i++){
+    for(let i = 2; i<data.length; i++){
         main.innerHTML +=    
             `
                 <a class = "card_link" href="${data[i]["링크"]}" target = "_blank">
@@ -149,7 +149,7 @@ function korean_food_btn(){
         return b[sortingField] - a[sortingField];        
     });
 
-    for(let i = 2; i<data.length+2; i++){
+    for(let i = 2; i<data.length; i++){
             if(data[i]["분류"] == "한식"){
             main.innerHTML +=    
                 `
@@ -184,7 +184,7 @@ function rice_food_btn(){
         return b[sortingField] - a[sortingField];        
     });
 
-    for(let i = 2; i<data.length+2; i++){
+    for(let i = 2; i<data.length; i++){
             if(data[i]["세분류"] == "백반"){
             main.innerHTML +=    
                 `
@@ -219,7 +219,7 @@ function western_food_btn(){
         return b[sortingField] - a[sortingField];        
     });
 
-    for(let i = 2; i<data.length+2; i++){
+    for(let i = 2; i<data.length; i++){
             if(data[i]["분류"] == "양식"){
             main.innerHTML +=    
                 `
