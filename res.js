@@ -12,6 +12,8 @@ let rice_food = document.querySelector("#rice");
 let snack_food = document.querySelector("#snack");
 let time = document.querySelector('#time');
 let btn = document.querySelector('#btn');
+let button = document.querySelector(".draw");
+let countButtonWrap = document.querySelector(".countButtonWrap")
 
 function low_price_btn(){
     main.innerHTML = "";
@@ -498,4 +500,55 @@ function search(){
                 `;
         }
     }
+}
+
+function random_machine(){   
+    
+    main.innerHTML = "";
+
+    let i = 2;
+    let restaurant = ""
+    let timer = setInterval(function(){
+
+        main.innerHTML = 
+
+                `
+                
+                <div class="card">
+                    <img class="card-img-top img-thumbnail img" src="img/${data[i]['사진']}"/>
+                    <div class="card-body">
+                        <span class="res_name">${data[i]["음식점이름"]}</span>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item info">#${data[i]["분류"]} #${data[i]["세분류"]}</li>
+                            <li class="list-group-item info">거리 : ${data[i]["거리(미터)"]}m, 걸어서 ${data[i]["시간(분)"]}분</li>
+                            <li class="list-group-item info">평점 : ${data[i]["평점(5점)"]} / 5</li>
+                            <li class="list-group-item info">대표 가격 : ${data[i][" 대표 가격 "].toLocaleString()}원</li>
+                            <li class="list-group-item info">${data[i]["메뉴1"]}</li>
+                            <li class="list-group-item info">${data[i]["메뉴2"]}</li>
+                            <li class="list-group-item info">${data[i]["메뉴3"]}</li>
+                        </ul>
+                        <a class="btn btn-primary card_link gps" href="${data[i]["링크"]}" target="_blank">위치보기</a>
+                        <button type="button" class="btn btn-primary position-relative like1">
+                            👍
+                            <span id="likeUp" class="position-absolute top-0 start-100
+                                        translate-middle badge rounded-pill bg-danger like2">
+                                99+
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </button>                        
+                    </div>
+                </div>
+                
+                ` ;
+
+        restaurant = data[i++]["음식점이름"];
+        if(i == data.length)
+            i = 2;
+    }, 100);    
+
+    let stop = function stop(){
+        console.log("stopped");
+        clearInterval(timer);
+    }    
+    button.addEventListener("click", stop);
 }

@@ -61,11 +61,11 @@
                     </li>
                     <li class="nav-item">
                         <span id="recommend" class="nav-link pick_text"
-                                onclick="DB_establisher_btn()">랜덤 럭키세븐</span>
+                                onclick="DB_establisher_btn()">랜덤럭키세븐픽</span>
                     </li>
                     <li class="nav-item">
                         <span class="nav-link"
-                            onclick="javascript:alert('오픈예정. 기대해 주세요!!');">맛집 월드컵</span>
+                            onclick="random_machine();clicks();">랜덤맛집돌림판</span>
                     </li>
                 </ul>
                 <div class="d-flex" role="search">
@@ -128,7 +128,10 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <!-- main -->
-    <div id="main" class="bg-info bg-opacity-25"></div>
+    <!-- main -->  
+    <div id = 'mmain'> 
+        <div id="main" class="bg-info bg-opacity-25"></div>    
+        <br/><button class="draw">뽑기</button>
+    </div>
 </body>
 </html>

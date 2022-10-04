@@ -52,6 +52,8 @@
 }
 
 /* main */
+
+
 #main {
     text-align: center;
     font-family: Sunflower, Georgia, 'Times New Roman', Times, serif;
@@ -116,4 +118,16 @@
 
 .list-group-item:last-child {
     border-radius: 0 0 20px 20px;
+}
+
+.draw{
+    display : inline-block;
+    width : 100px;
+    height : 50px;
+    margin : 10px auto;    
+}
+
+#mmain{
+    text-align: center;
+    font-family: Sunflower, Georgia, 'Times New Roman', Times, serif;
 }
